@@ -1,27 +1,20 @@
-[build-system]
-
-requires = ["setuptools>69.0.2", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "aroca-wrapper"
 version = "0.0.1"
 description = "A python wrapper for the Atlassian REST API"
+authors = ["arocasan <info@arocasan.com>"]
+license = "MIT"
 readme = "README.md"
-authors = [{name = "arocasan", email = "info@arocasan.com"}]
-license = {file = "LICENSE"}
-classifiers = [
-    "Development Status :: Pre - Alpha",
-    "Intended Audience :: Exprimental Souls",
-    "Programming Language :: Python :: 3"
-]
-kewords = ["atlassian", "rest", "wrapper", "api"]
-dependencies = [ "requests", "datetime", "json", "os", "sys", "time", "urllib3", "pandas"]
-requires-python = ">=3.9.0"
 
-[project.optional-dependencies]
-dev = [ "pytest"]
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+urllib3 = "^2.1.0"
+pandas = "^2.1.3"
 
-[project.urls]
-Homepage = "https://github.com/arocasan/aroca-wrapper"
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
 
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

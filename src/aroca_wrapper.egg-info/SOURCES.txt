@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/aroca_wrapper.egg-info/PKG-INFO
+src/aroca_wrapper.egg-info/SOURCES.txt
+src/aroca_wrapper.egg-info/dependency_links.txt
+src/aroca_wrapper.egg-info/requires.txt
+src/aroca_wrapper.egg-info/top_level.txt
+src/atlassian_products/__init__.py
+src/atlassian_products/jira_service_management.py
+src/atlassian_products/jira_software.py
+tests/test_jira_service_management.py
+tests/test_jira_software.py
+tests/test_rest_api.py
