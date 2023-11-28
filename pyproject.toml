@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "aroca-wrapper"
+name = "atlassian_products"
 version = "0.0.1"
 description = "A python wrapper for the Atlassian REST API"
 authors = ["arocasan <info@arocasan.com>"]
