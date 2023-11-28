@@ -1,0 +1,27 @@
+[build-system]
+
+requires = ["setuptools>69.0.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aroca-wrapper"
+version = "0.0.1"
+description = "A python wrapper for the Atlassian REST API"
+readme = "README.md"
+authors = [{name = "arocasan", email = "info@arocasan.com"}]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: Pre - Alpha",
+    "Intended Audience :: Exprimental Souls",
+    "Programming Language :: Python :: 3"
+]
+kewords = ["atlassian", "rest", "wrapper", "api"]
+dependencies = [ "requests" ]
+requires-python = ">=3.9.0"
+
+[project.optional-dependencies]
+dev = [ "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/arocasan/aroca-wrapper"
+
