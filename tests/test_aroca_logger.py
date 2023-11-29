@@ -13,7 +13,7 @@ def setup():
 
 
 def test_logger_file_exists():
-    log_file = f"{today}_aroca_wrapper.log"
+    log_file = f"logs/{today}_aroca_wrapper.log"
     assert os.path.exists(log_file)
 
 
