@@ -32,7 +32,7 @@ six==1.16.0
     # via python-dateutil
 tzdata==2023.3
     # via pandas
-urllib3==2.1.0
+urllib3==2.2.2
     # via
     #   aroca-wrapper (pyproject.toml)
     #   requests
